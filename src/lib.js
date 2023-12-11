@@ -1,19 +1,21 @@
-var config = require("./config");
-var express = require("express");
+import { config } from "./config.js";
+import express from "express";
 var app = express();
 var port = config.port;
-module.exports = {
-    send: function (src, path) {
-        app.get(path, (req, res) => {
-            res.send(src);
-            return res;
-        });
+export function send(src, path) {
+    app.get(path, (req, res) => {
+        res.send(src);
+        return res;
+    });
 
-    },
-        listen: function () {
-                app.listen(port, () => {
-                console.log(`Example app listening at http://localhost:${port}`);
-                });
-        
+}
+export function listen(msg) {
+    app.listen(port, () => {
+        if (msg) {
+            console.log(msg);
+        } else {
+            console.log(`0.0.0.0:${port}`);
         }
-};
+    });
+
+}

@@ -1,5 +1,4 @@
-var lib = require('./lib')
-var config = require('./config')
+import { listen, send } from "./aio.js";
 
-lib.send('Hello World!', '/')
-lib.listen()
+send('Hello World!', '/');
+listen()
