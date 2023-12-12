@@ -1,11 +1,10 @@
-# Changelog v0.2
+# Changelog v0.3
 
 # Added
-- Added the changed section in CHANGELOG.md
-- Added aio.js (foreshadowing)
-- Added type: module to package.json (blame copilot)
-- Added version number
+- Added getenv() in lib.js
+- Added QnA in index.js
+- Added github.js (wip)
 # Removed
-
+- Dotenv
 # Changed
-- Changed from require() to import in all files
+- 
