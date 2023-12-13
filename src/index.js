@@ -1,6 +1,5 @@
 // Q: Where is everything?
 // A: Check aio.js
-import { listen, send } from "./aio.js";
+import { listarticles, listen, send, log, getarticle } from "./aio.js";
 
-send('Hello World!', '/');
-listen()
+log(getarticle("foobar.md"))

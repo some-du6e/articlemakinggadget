@@ -1,10 +1,13 @@
-# Changelog v0.3
+# Changelog v0.4
 
 # Added
-- Added getenv() in lib.js
-- Added QnA in index.js
-- Added github.js (wip)
+- "getarticle()" function
+- "listarticles()" function
+- notes on changelog.md
+- TODO.md (wip)
 # Removed
-- Dotenv
+
 # Changed
-- 
+
+# Notes
+- bro im so stupid i overcomplicated the listarticles() function

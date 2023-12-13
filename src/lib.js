@@ -20,7 +20,7 @@ export function listen(msg) {
 }
 export function getenv() {
     try {
-        const data = fs.readFileSync("../.env", "utf8");
+        const data = fs.readFileSync(".env", "utf8"); // why does this get pissed when ran from src
         const array = {}
         for (const line of data.split("\n")) {
             if (line.startsWith("#")) {
