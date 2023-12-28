@@ -2,3 +2,4 @@
 export * from "./lib.js";
 export * from "./config.js"
 export * from "./github.js"
+export * from "./render.js"

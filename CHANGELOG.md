@@ -1,13 +1,13 @@
-# Changelog v0.4
+# Changelog v0.5
 
 # Added
-- "getarticle()" function
-- "listarticles()" function
-- notes on changelog.md
-- TODO.md (wip)
-# Removed
+- @param things
+- camelCase
+- rendering (github style)
 
+# Removed
+- TODO.md (too useless)
 # Changed
 
 # Notes
-- bro im so stupid i overcomplicated the listarticles() function
+- took longer than expected (got a little distracted)

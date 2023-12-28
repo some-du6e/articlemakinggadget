@@ -1,12 +1,14 @@
-import { getenv, log } from "./lib.js"; // Load the .env file
+import { getEnv, log } from "./lib.js"; // Load the .env file
 import request from 'sync-request';
-var token = getenv().TOKEN;
-var repo = getenv().REPO;
-var branch = getenv().BRANCH || "articles";
+var token = getEnv().TOKEN;
+var repo = getEnv().REPO;
+var branch = getEnv().BRANCH || "articles";
 
 
-
-export function listarticles() {
+/**
+ * Lists the md files in the branch+repo
+ */
+export function listArticles() {
   const url = `https://api.github.com/repos/${repo}/git/trees/${branch}?recursive=1`;
   const res = request('GET', url, {
     headers: {
@@ -23,8 +25,10 @@ export function listarticles() {
 
 
 }
-
-export function getarticle(name) {
+/**
+ * @param {string} name - name of the article
+ */
+export function getArticle(name) {
   const url = `https://raw.githubusercontent.com/${repo}/${branch}/${name}`;
   const res = request('GET', url, {
     headers: {
